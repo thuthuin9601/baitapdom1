@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="nhập số thứ nhất" id="so1">
+    <input type="number" placeholder="nhập số thứ hai" id="so2"><br>
+    <button type="button" onclick="add()">+</button>
+    <button type="button" onclick="sub()">-</button>
+    <button type="button" onclick="multi()">x</button>
+    <button type="button" onclick="div()">/</button><br>
+    <h3>Kết quả là:</h3>
+    <div id="ketqua"></div>
+</body>
+</html>
+<script>
+    function add(){
+        let number1=document.getElementById('so1').value;
+        let number2=document.getElementById('so2').value;
+        let a=Number(number1)+Number(number2);
+        document.getElementById('ketqua').innerHTML=a;
+    }
+    function sub(){
+        let number1=document.getElementById('so1').value;
+        let number2=document.getElementById('so2').value;
+        let b=Number(number1)-Number(number2);
+        document.getElementById('ketqua').innerHTML=b;
+    }
+    function multi(){
+        let number1=document.getElementById('so1').value;
+        let number2=document.getElementById('so2').value;
+        let c=Number(number1)*Number(number2);
+        document.getElementById('ketqua').innerHTML=c;
+    }
+    function div(){
+        let number1=document.getElementById('so1').value;
+        let number2=document.getElementById('so2').value;
+        let d=Number(number1)/Number(number2);
+        document.getElementById('ketqua').innerHTML=d;
+    }
+</script>
